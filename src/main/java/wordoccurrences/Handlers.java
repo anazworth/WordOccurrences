@@ -44,6 +44,8 @@ public class Handlers {
                 results.clear();
                 tf.setText(file.getAbsolutePath());
                 analyzeFile(tf, results);
+            }else {
+                results.setText("Please choose a valid file!");
             }
         };
     }
