@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc2ab674-b182-4d74-89b3-0706d7ca73b5" name="Changes" comment="Added unit tests">
+      <change beforePath="$PROJECT_DIR$/src/main/java/wordoccurrences/Handlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wordoccurrences/Handlers.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2KIhnt6sEj3S3aCA3vhjfsdA817" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "JavaDoc",
+    "last_directory_selection": "/Users/austinnazworth/Desktop/softwareDev1/WordOccurrences/src/main/java/wordoccurrences",
+    "last_opened_file_path": "/Users/austinnazworth/Desktop/softwareDev1/WordOccurrences/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="wordoccurrences" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screenshots" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="wordoccurrences.Handlers" />
+      <recent name="text" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="wordoccurrences" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TextAnalyzerTest">
+    <configuration name="HandlersTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="wordoccurrences.HandlersTest" />
+      <module name="WordOccurrences" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wordoccurrences.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wordoccurrences.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="wordoccurrences.Main" />
+      <module name="WordOccurrences" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wordoccurrences.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextAnalyzerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WordOccurrences" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wordoccurrences.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="wordoccurrences" />
+      <option name="MAIN_CLASS_NAME" value="wordoccurrences.TextAnalyzerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextAnalyzerTest.testAnalyzeText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WordOccurrences" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wordoccurrences.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="wordoccurrences" />
+      <option name="MAIN_CLASS_NAME" value="wordoccurrences.TextAnalyzerTest" />
+      <option name="METHOD_NAME" value="testAnalyzeText" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextAnalyzerTest.testFormatText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WordOccurrences" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wordoccurrences.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="wordoccurrences" />
+      <option name="MAIN_CLASS_NAME" value="wordoccurrences.TextAnalyzerTest" />
+      <option name="METHOD_NAME" value="testFormatText" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TextAnalyzerTest.testFormatText" />
+        <item itemvalue="JUnit.TextAnalyzerTest.testAnalyzeText" />
+        <item itemvalue="JUnit.TextAnalyzerTest" />
+        <item itemvalue="Application.wordoccurrences.Main" />
+        <item itemvalue="Application.HandlersTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc2ab674-b182-4d74-89b3-0706d7ca73b5" name="Changes" comment="" />
+      <created>1673668177080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673668177080</updated>
+      <workItem from="1673668177682" duration="4701000" />
+      <workItem from="1673929128586" duration="2413000" />
+      <workItem from="1673992352249" duration="4264000" />
+      <workItem from="1674707093461" duration="283000" />
+      <workItem from="1679255209392" duration="3755000" />
+      <workItem from="1679259294808" duration="1029000" />
+      <workItem from="1679286068511" duration="137000" />
+      <workItem from="1679359674294" duration="60000" />
+      <workItem from="1679514090865" duration="9490000" />
+      <workItem from="1679948157447" duration="3731000" />
+      <workItem from="1680212778413" duration="142000" />
+      <workItem from="1680212933756" duration="65000" />
+      <workItem from="1680213122981" duration="47000" />
+      <workItem from="1681150748856" duration="1801000" />
+    </task>
+    <task id="LOCAL-00001" summary="Completed TextAnalyzer">
+      <created>1673995426673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673995426673</updated>
+    </task>
+    <task id="LOCAL-00002" summary="UI Update">
+      <created>1679257499455</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679257499455</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added example screenshots">
+      <created>1679257945059</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679257945059</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update README.md">
+      <created>1679258121129</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679258121129</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added unit tests">
+      <created>1679953944728</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679953944728</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed TextAnalyzer" />
+    <MESSAGE value="UI Update" />
+    <MESSAGE value="Added example screenshots" />
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="Added unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unit tests" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/WordOccurrences$TextAnalyzerTest_testAnalyzeText.ic" NAME="TextAnalyzerTest.testAnalyzeText Coverage Results" MODIFIED="1679516662374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>wordoccurrences.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/WordOccurrences$app_Main.ic" NAME="app.Main Coverage Results" MODIFIED="1674707223949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>app.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/WordOccurrences$TextAnalyzerTest_testFormatText.ic" NAME="TextAnalyzerTest.testFormatText Coverage Results" MODIFIED="1674707276971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>app.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/WordOccurrences$TextAnalyzerTest.ic" NAME="TextAnalyzerTest Coverage Results" MODIFIED="1679516492481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>wordoccurrences.*</FILTER>
+    </SUITE>
+  </component>
+</project>
