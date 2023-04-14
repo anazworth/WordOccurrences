@@ -2,6 +2,7 @@ package wordoccurrences;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -14,6 +15,16 @@ import java.util.stream.Collectors;
  * @author Austin Nazworth
  */
 public class TextAnalyzer {
+    final static WordDAO repo;
+
+    static {
+        try {
+            repo = new WordDAO();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     /**
      * This method loads a file from the given path.
      *
@@ -22,6 +33,14 @@ public class TextAnalyzer {
      * @throws Exception If the file is not found.
      */
     public String loadFile(String path) throws Exception {
+        // Clear the database before analyzing a new file
+        try {
+            repo.removeAllWords();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        // Load the file
         try {
             return new String(Files.readAllBytes(Paths.get(path))); // Read the file into a string in a way that is filetype agnostic
         } catch (Exception e) {
@@ -49,28 +68,37 @@ public class TextAnalyzer {
      *
      * @param words The list of words to count.
      * @return A map of each word to the number of occurrences.
+     * @deprecated This method is no longer used due to use of MYSQL.
      */
+    @Deprecated
     public Map<String, Integer> countWords(List<String> words) {
         return words.stream()
                 .collect(Collectors.toMap(word -> word, word -> 1, Integer::sum));
     }
 
     /**
+     * This method saves the given list of words to the database.
+     *
+     * @param words The list of words to save.
+     * @throws SQLException If the database cannot be accessed.
+     */
+    public static void saveWords(List<String> words) throws SQLException {
+        for (String word : words) {
+            repo.save(word);
+        }
+    }
+
+    /**
      * This method returns a list of the top 20 words in the given map.
      *
-     * @param wordCounts A map of words to the number of occurrences.
      * @return A list of the top 20 words.
+     * @throws SQLException If the database cannot be accessed.
      */
-    public List<String> topWords(Map<String, Integer> wordCounts) {
+    public List<String> topWords() throws SQLException {
         List<String> results = new ArrayList<>();
-        List<Map.Entry<String, Integer>> sortedWordCounts = wordCounts.entrySet().stream()
-                .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
-                .toList();
-        for (int i = 0; i < 20; i++) {
-            if (i >= sortedWordCounts.size()) {
-                break;
-            }
-            results.add(i + 1 + ". " + sortedWordCounts.get(i));
+        List<Word> wordCounts = repo.getTopWords(20);
+        for (Word word : wordCounts) {
+            results.add(word.word() + ": " + word.count());
         }
         return results;
     }
@@ -86,7 +114,7 @@ public class TextAnalyzer {
         String text = analyzer.loadFile(path);
         assert text != null;
         List<String> words = analyzer.formatText(text);
-        Map<String, Integer> wordCount = analyzer.countWords(words);
-        return analyzer.topWords(wordCount);
+        saveWords(words);
+        return analyzer.topWords();
     }
 }

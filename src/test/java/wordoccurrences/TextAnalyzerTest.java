@@ -3,11 +3,13 @@ package wordoccurrences;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
@@ -25,6 +27,12 @@ public class TextAnalyzerTest {
     public static void setup() {
         System.out.println("Starting tests...");
         analyzer = new TextAnalyzer();
+    }
+
+    @BeforeEach
+    public void clearDB() throws SQLException {
+        WordDAO repo = new WordDAO();
+        repo.removeAllWords();
     }
     @Test
     public void testLoadFile() throws Exception {
@@ -64,6 +72,7 @@ public class TextAnalyzerTest {
         assertEquals(expected, result);
     }
 
+    @Deprecated
     @Test
     public void testCountWords() {
         // Setup
@@ -85,23 +94,18 @@ public class TextAnalyzerTest {
     }
 
     @Test
-    public void testTopWords() {
+    public void testTopWords() throws SQLException {
         // Setup
-        Map<String, Integer> setup = new HashMap<>();
-        setup.put("this", 2);
-        setup.put("is", 2);
-        setup.put("a", 2);
-        setup.put("test", 2);
-        setup.put("only", 1);
-        setup.put("biggest", 3);
+        List<String> setup = List.of("this", "is", "a", "test", "this", "is", "only", "a", "test", "biggest", "biggest", "biggest");
+        TextAnalyzer.saveWords(setup);
 
         // Test
-        List<String> result = analyzer.topWords(setup);
+        List<String> result = analyzer.topWords();
 
         // Assert
         assertEquals(6, result.size());
-        assertEquals("1. biggest=3", result.get(0));
-        assertEquals("6. only=1", result.get(5));
+        assertEquals("biggest: 3", result.get(0));
+        assertEquals("only: 1", result.get(5));
     }
 
     @Test
@@ -114,8 +118,8 @@ public class TextAnalyzerTest {
 
         // Assert
         assertEquals(20, result.size());
-        assertEquals("1. the=57", result.get(0));
-        assertEquals("20. above=7", result.get(19));
+        assertEquals("the: 57", result.get(0));
+        assertEquals("above: 7", result.get(19));
     }
 
     @Test
